@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(108, 114, 137);
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(242, 235, 227);
+}
+
+h1 {
+  margin-top: 10px;
+  font-family: 'Fraunces', serif;
+  color:rgb(28, 35, 43);
+  margin-bottom: 0;
+}
+
+h5 {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(60, 128, 103);
+  border-style: none;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+}
+
+button:active {
+  background-color: rgb(28, 35, 43);
+}
+
+.card {
+  margin: 20px 18px 20px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.description-container {
+  padding: 24px;
+}
+
+.img-container > img {
+  width: 100%;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.big-price {
+  color:rgb(60, 128, 103);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 12px;
+  font-family: 'Fraunces', serif;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.button-label > img {
+  margin-right: 10px;
+}
+
+.button-label {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 475px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .card {
+    display: flex;
+    max-width: 560px;
+  }
+  .img-container {
+    flex-basis: 50%;
+  }
+  .description-container {
+    flex-basis: 50%;
+    padding: 40px
+  }
+  #product-image {
+    content: url('./images/image-product-desktop.jpg');
+    object-fit: cover;
+    height: 100%;
+  }
+}
